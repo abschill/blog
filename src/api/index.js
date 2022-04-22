@@ -16,7 +16,7 @@ const mainLoader = loader({
 });
 
 api.loader = mainLoader;
-api.use(express.static(path.join(process.cwd(), 'src')));
+// api.use(express.static(path.join(process.cwd(), 'src')));
 api.use(SiteRouter);
 
 module.exports = api;
