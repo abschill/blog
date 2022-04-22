@@ -2,5 +2,9 @@
   "name": "blog-dot-abschill",
   "version": "2.1.8",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "html-chunk-loader": "^0.6.10"
+  }
 }

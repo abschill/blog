@@ -1,0 +1,21 @@
+<!--@partial=head-->
+<body class="page-is-animatable">
+    <!--@partial=nav-->
+    <main>
+        <div id="content-wrapper">
+            <article class="article">
+                <div class="article-meta">
+                    <img width="128" height="128" src="<!--@render=article_icon-->" alt="Article Icon">
+                    <h1 class="article-meta-title"><!--@render=title--></h1>
+                    <p class="article-meta-description"><!--@render=description--></p>
+                    <div class="article-meta-date"><!--@render=date--></div>
+                </div>
+                <div class="article-content">
+                    <!--@render=content-->
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+<script src="/assets/js/article.js"></script>
+<!--@partial=scripts-->
