@@ -16,7 +16,14 @@ const mainLoader = loader({
 });
 
 api.loader = mainLoader;
-// api.use(express.static(path.join(process.cwd(), 'src')));
+
+api.use((req, res, next) => {
+	console.log(req.path);
+	if(req.path.includes('/css')) res.set('Content-Type', 'text/css');
+	next();
+});
+api.use('/assets', express.static(path.join(process.cwd(), 'src/assets')));
+api.use('/css', express.static(path.join(process.cwd(), 'styles/css')));
 api.use(SiteRouter);
 
 module.exports = api;

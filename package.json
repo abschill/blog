@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:less": "lessc src/styles/less/style.less src/styles/css/style.css",
-    "watch:less": "less-watch-compiler src/styles/less src/styles/css",
+    "build:less": "lessc styles/less/style.less styles/css/style.css",
+    "watch:less": "less-watch-compiler styles/less styles/css",
     "watch:server": "nodemon index.js",
     "dev": "npm-run-all -p watch:server watch:less"
   },
