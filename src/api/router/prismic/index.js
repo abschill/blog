@@ -11,7 +11,7 @@ async function getArticleId(path) {
         ] );
         const ret = docs?.results[0];
         ret.data.content = prismicDOM.RichText.asHtml( ret.data.content );
-        return ret; 
+        return ret;
     }
     catch(e) {
         return e;
@@ -27,15 +27,15 @@ async function getArticles({...opts}) {
         }
         if(opts.urlData) {
             return docs.results.map(res => {
-                 return { 
-                        icon: res.data.icon.url, 
-                        date: res.data.created, 
-                        desc: res.data.description,
+                 return {
+                        icon: res.data.icon.url,
+                        date: res.data.created,
+                        desc: res.data.description.replace( /\u00A0/g, ' '),
                         title:res.data.title,
                         tags: res.tags.join(','),
                         href: res.uid
-                    } 
-                }); 
+                    }
+                });
         }
     }
     catch ( e ) {
@@ -46,7 +46,7 @@ async function getTagList() {
     try {
         const api = await Prismic.getApi(url, {token});
         const _set = new Set(api.tags);
-        return [..._set]; 
+        return [..._set];
     }
     catch ( e ) {
         return e;
