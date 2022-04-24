@@ -32,4 +32,5 @@ api.get( '/manifest.json', ( req, res ) => {
 
 api.use(SiteRouter);
 
+api.all('*', (req, res) => res.send(mainLoader.template('error')));
 module.exports = api;

@@ -2,13 +2,12 @@ const express = require('express');
 const prismic = require('./prismic');
 const router = express.Router();
 async function data( id ) {
-    //load data
     const article = await prismic.getArticleId( id );
-    const title = article?.data?.title?.replace( /\u00A0/g, ' ');
+    const title = prismic.cleanStupidText(article?.data?.title);
     const date = article?.data?.created;
     const article_icon = article?.data?.icon?.url;
-    const description = article?.data?.description?.replace( /\u00A0/g, ' ');
-    const content = article?.data?.content?.replace( /\u00A0/g, ' ');
+    const description = prismic.cleanStupidText(article?.data?.description);
+    const content = prismic.cleanStupidText(article?.data?.content);
     return {
         title,
         description,
@@ -24,17 +23,17 @@ router.get('/', async (req, res) => {
     return res.send(req.app.loader.template('home', { tags: prismicRes0, homeLinks: prismicRes1 }));
 });
 
-router.get('/about', (req, res) => {
-	return res.send(req.app.loader.template('about'));
-});
+router.get('/about', (req, res) => res.send(req.app.loader.template('about')));
 
 router.get( '/articles/:id', async ( req, res ) => {
-    const article = await data( req.params.id );
-    res.send( req.app.loader.template( 'article', { partialInput: {
-        meta_title: article.title,
-        meta_desc:  article.description,
-        og_img: article.article_icon
-    }, ...article } )  );
-
+    const article = await data(req.params.id);
+	if( article ) {
+		return res.send( req.app.loader.template( 'article', { partialInput: {
+			meta_title: article.title,
+			meta_desc:  article.description,
+			og_img: article.article_icon
+		}, ...article } )  );
+	}
+	return res.redirect('/error');
 } );
 module.exports = router;

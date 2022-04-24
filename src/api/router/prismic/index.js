@@ -30,7 +30,7 @@ async function getArticles({...opts}) {
                  return {
                         icon: res.data.icon.url,
                         date: res.data.created,
-                        desc: res.data.description.replace( /\u00A0/g, ' '),
+                        desc: cleanStupidText(res.data.description),
                         title:res.data.title,
                         tags: res.tags.join(','),
                         href: res.uid
@@ -42,6 +42,7 @@ async function getArticles({...opts}) {
         return e;
     }
 }
+
 async function getTagList() {
     try {
         const api = await Prismic.getApi(url, {token});
@@ -52,4 +53,8 @@ async function getTagList() {
         return e;
     }
 }
-module.exports = { getArticleId, getArticles, getTagList };
+
+const cleanStupidText = txt =>  !txt ? '' : txt.replace( /\u00A0/g, ' ');
+
+
+module.exports = { getArticleId, getArticles, getTagList, cleanStupidText };

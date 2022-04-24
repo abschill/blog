@@ -1,20 +1,20 @@
 <!--@partial=head-->
 <!--@partial=nav-->
-<div id="content-wrapper">
-	<h1 class="display-4">Learn the Full Stack</h1>
-    <main class="home">
-            <ul class="collection">
-                <!--@loop(homeLinks){
-                    <li class="collection-item">
-                        <a href="/articles/{href}">
-                            <div class="collection-item__icon"><img class="circle" src="{icon}"/></div>
-                            <div class="collection-item__title">{title}</div>
-                            <small class="collection-item__date">{date}</small>
-                            <p>{desc}</p>
-                        </a>
-                    </li>
-                }-->
-            </ul>
-	</main>
-</div>
+<main>
+	<div id="content-wrapper">
+		<h1 class="display-4">Learn the Full Stack</h1>
+		<ul class="collection">
+			<!--@loop(homeLinks){
+				<li class="collection-item">
+					<a href="/articles/{href}">
+						<div class="collection-item__icon"><img class="circle" src="{icon}"/></div>
+						<div class="collection-item__title">{title}</div>
+						<small class="collection-item__date">{date}</small>
+						<p>{desc}</p>
+					</a>
+				</li>
+			}-->
+		</ul>
+	</div>
+</main>
 <!--@partial=scripts-->

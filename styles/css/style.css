@@ -24,7 +24,6 @@
 }
 a {
   color: #428bca;
-  display: block;
   text-decoration: none;
 }
 a:hover {
@@ -75,6 +74,9 @@ a:hover {
 }
 .collection-item:hover img {
   opacity: 1;
+}
+p {
+  line-height: 2.75em;
 }
 pre {
   display: block;
