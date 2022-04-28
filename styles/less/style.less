@@ -10,15 +10,26 @@
     vertical-align: center;
 }
 
+body {
+    min-height: 100vh;
+    height: -webkit-fill-available;
+    overflow-x: hidden;
+}
+
+#masthead {
+    float: left;
+
+    img {
+        vertical-align: middle;
+    }
+}
+
 #content-wrapper {
 	margin: 0 auto;
 	max-width: 960px;
 }
 
 .nav {
-	border-bottom-color: transparent;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;

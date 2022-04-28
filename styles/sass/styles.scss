@@ -1,0 +1,33 @@
+@use "mixins" as m;
+
+.transition-in {
+    @include m.transition-in;
+}
+
+.transition-scale-in {
+    @include m.transition-in;
+    transform: scale(.25) translateY(3rem);
+
+    &.is-visible {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.article {
+	@include m.layout-item;
+
+	line-height: 2.5;
+    position: relative;
+    top: 2rem;
+    padding: 1rem;
+
+	&-meta {
+		&-title {
+			@include m.article-title;
+		}
+
+		&-description {
+			font-size: 14px;
+		}
+	}
+}

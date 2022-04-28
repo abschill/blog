@@ -1,0 +1,30 @@
+@mixin article-title {
+	font-style: italic;
+	font-weight: 500;
+
+	@media(min-width:1280px) {
+		font-size: 2.25rem;
+	}
+}
+
+@mixin transition-in {
+	opacity: 0;
+    transform: translateY(3rem);
+
+    .page-is-animatable & {
+        transition: opacity .55s cubic-bezier(0, 0, .3, 1),
+                    transform .6s cubic-bezier(0, 0, .3, 1);
+    }
+
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@mixin layout-item {
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 300px;
+}

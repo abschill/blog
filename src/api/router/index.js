@@ -1,8 +1,9 @@
 const express = require('express');
 const prismic = require('./prismic');
 const router = express.Router();
-async function data( id ) {
-    const article = await prismic.getArticleId( id );
+
+async function data(id) {
+    const article = await prismic.getArticleId(id);
     const title = prismic.cleanStupidText(article?.data?.title);
     const date = article?.data?.created;
     const article_icon = article?.data?.icon?.url;
@@ -25,14 +26,14 @@ router.get('/', async (req, res) => {
 
 router.get('/about', (req, res) => res.send(req.app.loader.template('about')));
 
-router.get( '/articles/:id', async ( req, res ) => {
+router.get('/articles/:id', async (req, res) => {
     const article = await data(req.params.id);
 	if( article ) {
 		return res.send( req.app.loader.template( 'article', { partialInput: {
 			meta_title: article.title,
 			meta_desc:  article.description,
 			og_img: article.article_icon
-		}, ...article } )  );
+		}, ...article } ));
 	}
 	return res.redirect('/error');
 } );

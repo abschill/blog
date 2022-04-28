@@ -25,7 +25,7 @@ api.use((req, res, next) => {
 });
 api.use('/assets', express.static(join(api.cwd, 'src/assets')));
 api.use('/css', express.static(join(api.cwd, 'styles/css')));
-
+api.use('/js', express.static(join(api.cwd, 'js')));
 api.get( '/manifest.json', ( req, res ) => {
     return res.sendFile(resolve(process.cwd(), 'manifest.json'));
 } );

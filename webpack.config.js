@@ -1,23 +1,18 @@
 const path = require( 'path' );
 module.exports = {
-    entry: {
-        components:'./components/index.js',
-        articles:'./pages/articles/index.js',
-        article:'./pages/articles/article/index.js',
-        page: './pages/page.js'
-    },
+	entry: './js/page.js',
     module: {
-        rules:[
+        rules: [
             {
-                test:/\.js$/,
-                use:'babel-loader',
-                exclude:/node_modules/
+                test: /\.js$/,
+                use: 'swc-loader',
+                exclude: /node_modules/
             }
         ]
     },
     output: {
-        filename:'[name].js',
-        path: path.resolve( __dirname, 'public' ),
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'js'),
     },
     target: 'web',
 }
