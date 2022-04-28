@@ -19,9 +19,6 @@
   padding: 1rem 0;
   transition: all 0.15s ease;
 }
-.nav:hover {
-  border-bottom-color: #428bca;
-}
 a {
   color: #428bca;
   text-decoration: none;
@@ -76,10 +73,34 @@ a:hover {
   opacity: 1;
 }
 p {
+  font-size: 1.05rem;
   line-height: 2.75em;
+  margin: 1.25rem 0;
 }
 pre {
-  display: block;
+  background: #efefef;
+  border: 2px solid transparent;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(27, 31, 35, 0.25) 0px 0px 0px 1px;
+  cursor: pointer;
+  display: block;
   font-family: monospace;
+  margin: 1.25rem 0;
+  padding: 0.25rem;
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+pre:before {
+  border-radius: 50%;
+  content: "</>";
+  display: block;
+  font-size: 17px;
+  font-weight: 800;
+  float: right;
+  transition: all 0.35s ease;
+  transform: rotate(0);
+  width: clamp(18px, 26px, 36px);
+}
+pre:hover:before {
+  transform: rotate(5deg);
 }

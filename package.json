@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build:less": "lessc styles/less/style.less styles/css/style.css",
-    "watch:less": "less-watch-compiler styles/less styles/css",
+    "watch:less": "npx lesscss-watch styles/less styles/css",
     "watch:server": "nodemon index.js",
     "dev": "npm-run-all -p watch:server watch:less"
   },
@@ -14,11 +14,11 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "html-chunk-loader": "^0.6.11",
+    "lesscss-watch": "^0.1.3",
     "prismic-dom": "^2.2.7"
   },
   "devDependencies": {
     "less": "^4.1.2",
-    "less-watch-compiler": "^1.16.3",
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5"
   }
