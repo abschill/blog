@@ -10,11 +10,8 @@
 @mixin transition-in {
 	opacity: 0;
     transform: translateY(3rem);
-
-    .page-is-animatable & {
-        transition: opacity .55s cubic-bezier(0, 0, .3, 1),
-                    transform .6s cubic-bezier(0, 0, .3, 1);
-    }
+	transition: opacity .55s cubic-bezier(0, 0, .3, 1),
+	transform .6s cubic-bezier(0, 0, .3, 1);
 
     &.is-visible {
         opacity: 1;

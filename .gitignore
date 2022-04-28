@@ -3,5 +3,5 @@ node_modules
 .ignore
 *.lock
 .env
-styles/css
+styles/css/**/*
 js/bundle.js
