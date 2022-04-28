@@ -3,3 +3,4 @@ node_modules
 .ignore
 *.lock
 .env
+styles/css
