@@ -28,7 +28,7 @@ router.get('/about', (req, res) => res.send(req.app.loader.template('about')));
 
 router.get('/articles/:id', async (req, res) => {
     const article = await data(req.params.id);
-	if( article ) {
+	if(article) {
 		return res.send( req.app.loader.template( 'article', { partialInput: {
 			meta_title: article.title,
 			meta_desc:  article.description,
