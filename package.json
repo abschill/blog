@@ -11,7 +11,9 @@
     "watch:server": "nodemon index.js",
     "build:js": "webpack",
     "watch:js": "webpack --watch",
-    "dev": "npm-run-all -p watch:js watch:server watch:less watch:sass"
+	"build-all": "npm run build:less && npm run build:sass && npm run build:js",
+    "dev": "npm-run-all -p watch:js watch:server watch:less watch:sass",
+	"start": "npm run build-all && node src/index"
   },
   "dependencies": {
     "@prismicio/client": "5.1.0",
