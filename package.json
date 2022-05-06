@@ -11,16 +11,15 @@
     "watch:server": "nodemon index.js",
     "build:js": "webpack",
     "watch:js": "webpack --watch",
-	"build-all": "npm run build:less && npm run build:sass && npm run build:js",
+    "build-all": "npm run build:less && npm run build:sass && npm run build:js",
     "dev": "npm-run-all -p watch:js watch:server watch:less watch:sass",
-	"start": "npm run build-all && node src/index"
+    "start": "npm run build-all && node src/index"
   },
   "dependencies": {
     "@prismicio/client": "5.1.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "html-chunk-loader": "^0.6.11",
-    "lesscss-watch": "^0.1.3",
     "prismic-dom": "^2.2.7",
     "sweetalert2": "^11.4.9"
   },
@@ -28,8 +27,11 @@
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.173",
     "less": "^4.1.2",
+    "lesscss-watch": "^0.1.3",
+    "marked": "^4.0.15",
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
+    "pygmentize-bundled": "^2.3.0",
     "sass": "^1.51.0",
     "swc-loader": "^0.2.0",
     "webpack": "^5.72.0",
