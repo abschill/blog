@@ -26,12 +26,12 @@
   "devDependencies": {
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.173",
+    "jsdom": "^19.0.0",
     "less": "^4.1.2",
     "lesscss-watch": "^0.1.3",
     "marked": "^4.0.15",
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
-    "pygmentize-bundled": "^2.3.0",
     "sass": "^1.51.0",
     "swc-loader": "^0.2.0",
     "webpack": "^5.72.0",

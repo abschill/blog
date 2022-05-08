@@ -7,3 +7,4 @@ styles/css/**/*
 js/bundle.js
 .content
 package-lock*
+content/HTTP101.md
