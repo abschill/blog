@@ -6,15 +6,19 @@ const token = process.env.prismic_key;
 async function getArticleId(path) {
     try {
         const api = await Prismic.getApi(url, {token});
-        const docs = await api.query( [
+        const docs = await api.query([
             Prismic.predicates.at('document.type', 'article'), Prismic.predicates.at('my.article.uid', path)
-        ] );
+        ]);
         const ret = docs?.results[0];
-        ret.data.content = prismicDOM.RichText.asHtml( ret.data.content );
+		if(!ret) {
+			return null;
+		}
+        ret.data.content = prismicDOM.RichText.asHtml(ret.data.content);
         return ret;
     }
     catch(e) {
-        return e;
+		console.error(e);
+        return null;
     }
 }
 

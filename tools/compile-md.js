@@ -9,6 +9,7 @@ const {
 const { resolve, join } = require('path');
 const filterContent  = require('./utils/filter-content');
 const { parseFileDirective } = require('./utils/parse-directive');
+const { prependPartial } = require('./utils/add-hcl-partial');
 const contentPath = join(process.cwd(), 'content');
 const {
 	_outPath,
@@ -51,6 +52,7 @@ contentPages.forEach(validPage => {
 		}
 	}
 
+	validHTML = prependPartial(validHTML, '<!--@partial=head--><!--@partial=nav-->');
 	const outPath = resolve(_outPath, name);
 	writeFileSync(outPath, validHTML);
 	console.log(`File Written: ${name}`);

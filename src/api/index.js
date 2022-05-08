@@ -16,8 +16,21 @@ const mainLoader = loader({
 	watch: true
 });
 
+const mdLoader = loader({
+	pathRoot: 'views',
+	templates: '.content',
+	partials: 'layout',
+	partialInput: {
+        meta_title: `abschill's blog`,
+        meta_desc: 'tutorials for full stack software engineering and some rants',
+        icon: 'https://d24hicsohgfvzu.cloudfront.net/assets/logo144.png',
+        og_img: 'https://d24hicsohgfvzu.cloudfront.net/assets/logo512.png',
+    }
+})
+
 api.cwd = process.cwd();
 api.loader = mainLoader;
+api.mdLoader = mdLoader;
 
 api.use((req, res, next) => {
 	if(req.path.includes('/css')) res.set('Content-Type', 'text/css');
@@ -26,9 +39,7 @@ api.use((req, res, next) => {
 api.use('/assets', express.static(join(api.cwd, 'src/assets')));
 api.use('/css', express.static(join(api.cwd, 'styles/css')));
 api.use('/js', express.static(join(api.cwd, 'js')));
-api.get( '/manifest.json', ( req, res ) => {
-    return res.sendFile(resolve(process.cwd(), 'manifest.json'));
-} );
+api.get('/manifest.json', ( _, res ) => res.sendFile(resolve(process.cwd(), 'manifest.json')));
 
 api.use(SiteRouter);
 

@@ -9,13 +9,16 @@ async function data(id) {
     const article_icon = article?.data?.icon?.url;
     const description = prismic.cleanStupidText(article?.data?.description);
     const content = prismic.cleanStupidText(article?.data?.content);
-    return {
-        title,
-        description,
-        date,
-        article_icon,
-        content
-    }
+	if(article) {
+		return {
+			title,
+			description,
+			date,
+			article_icon,
+			content
+		}
+	}
+    return null;
 }
 
 router.get('/', async (req, res) => {
@@ -35,6 +38,8 @@ router.get('/articles/:id', async (req, res) => {
 			og_img: article.article_icon
 		}, ...article } ));
 	}
-	return res.redirect('/error');
+	// if no prismic article check local for markdown version
+	const markdownCheck = req.app.mdLoader.template(req.params.id);
+	return markdownCheck ? res.send(markdownCheck):res.redirect('/error');
 } );
 module.exports = router;
