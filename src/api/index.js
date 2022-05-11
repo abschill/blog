@@ -12,8 +12,7 @@ const mainLoader = loader({
         meta_desc: 'tutorials for full stack software engineering and some rants',
         icon: 'https://d24hicsohgfvzu.cloudfront.net/assets/logo144.png',
         og_img: 'https://d24hicsohgfvzu.cloudfront.net/assets/logo512.png',
-    },
-	watch: true
+    }
 });
 
 const mdLoader = loader({
