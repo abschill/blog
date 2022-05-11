@@ -19,14 +19,15 @@ api.all('*', (req, res) => res.send(mainLoader.template('error')));
 
 module.exports = function createAPI(mode) {
 	api.cwd = process.cwd();
+	let foundMode = mode ?? 'prod';
 	const mainLoader = loader({
 		...baseLoaderOptions,
-		watch: mode === 'dev'
+		watch: foundMode === 'dev'
 	});
 
 	const mdLoader = loader({
 		...mdLoaderOptions,
-		watch: mode === 'dev'
+		watch: foundMode === 'dev'
 	});
 	api.loader = mainLoader;
 	api.mdLoader = mdLoader;
