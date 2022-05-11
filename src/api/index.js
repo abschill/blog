@@ -4,7 +4,7 @@ const loader = require('html-chunk-loader');
 const SiteRouter = require('./router');
 const { mdLoaderOptions, baseLoaderOptions } = require('./loaders');
 const api = express();
-
+api.cwd = process.cwd();
 api.use((req, res, next) => {
 	if(req.path.includes('/css')) res.set('Content-Type', 'text/css');
 	next();
@@ -17,19 +17,18 @@ api.get('/manifest.json', ( _, res ) => res.sendFile(resolve(process.cwd(), 'man
 api.use(SiteRouter);
 api.all('*', (req, res) => res.send(mainLoader.template('error')));
 
-module.exports = function createAPI(mode) {
-	api.cwd = process.cwd();
-	let foundMode = mode ?? 'prod';
-	const mainLoader = loader({
-		...baseLoaderOptions,
-		watch: foundMode === 'dev'
-	});
+let foundMode = process.argv[2] ?? 'prod';
+const mainLoader = loader({
+	...baseLoaderOptions,
+	watch: foundMode === 'dev'
+});
 
-	const mdLoader = loader({
-		...mdLoaderOptions,
-		watch: foundMode === 'dev'
-	});
-	api.loader = mainLoader;
-	api.mdLoader = mdLoader;
-	return api;
-};
+const mdLoader = loader({
+	...mdLoaderOptions,
+	watch: foundMode === 'dev'
+});
+
+api.loader = mainLoader;
+api.mdLoader = mdLoader;
+
+module.exports = api;
