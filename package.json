@@ -20,7 +20,7 @@
     "@prismicio/client": "5.1.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "html-chunk-loader": "^0.6.11",
+    "html-chunk-loader": "^0.6.15",
     "prismic-dom": "^2.2.7",
     "sweetalert2": "^11.4.9"
   },
