@@ -14,7 +14,7 @@
 	"build:md": "node tools/compile-md",
     "build-all": "npm run build:less && npm run build:sass && npm run build:js && npm run build:md",
     "dev": "npm-run-all -p watch:js watch:server watch:less watch:sass",
-    "start": "npm run build-all && node src/index"
+    "start": "npm run build-all && node src prod"
   },
   "dependencies": {
     "@prismicio/client": "5.1.0",
