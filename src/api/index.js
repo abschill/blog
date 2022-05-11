@@ -17,15 +17,16 @@ api.get('/manifest.json', ( _, res ) => res.sendFile(resolve(process.cwd(), 'man
 api.use(SiteRouter);
 api.all('*', (req, res) => res.send(mainLoader.template('error')));
 
-let foundMode = process.argv[2] ?? 'prod';
+const foundMode = process.argv[2];
+
 const mainLoader = loader({
 	...baseLoaderOptions,
-	watch: foundMode === 'dev'
+	watch: (typeof(foundMode) === 'string' && foundMode === 'dev')
 });
 
 const mdLoader = loader({
 	...mdLoaderOptions,
-	watch: foundMode === 'dev'
+	watch: (typeof(foundMode) === 'string' && foundMode === 'dev')
 });
 
 api.loader = mainLoader;
