@@ -8,7 +8,7 @@
     "watch:less": "npx lesscss-watch styles/less styles/css",
     "build:sass": "sass ./styles/sass/styles.scss:./styles/css/sass.css",
     "watch:sass": "sass -w ./styles/sass/styles.scss:./styles/css/sass.css",
-    "watch:server": "nodemon index.js",
+    "watch:server": "nodemon index.js dev",
     "build:js": "webpack",
     "watch:js": "webpack --watch",
 	"build:md": "node tools/compile-md",
