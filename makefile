@@ -1,6 +1,6 @@
-build-all:
+dev: .build-all .dev
+
+.build-all:
 	npm run build-all
-start-dev:
+.dev:
 	npm run dev
-start-prod:
-	npm run start

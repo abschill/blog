@@ -41,3 +41,12 @@ if(anyObservables && anyObservables.length > 0) {
 	anyObservables.forEach(el => io.observe(el));
 }
 
+// copy to clipboard on pre tags
+const codeSegments = document.querySelectorAll('pre');
+
+codeSegments.forEach(preTag => {
+    preTag.title = "Click to Copy Text";
+    preTag.addEventListener('click', () => {
+        navigator.clipboard.writeText(preTag.innerText);
+    } );
+} );

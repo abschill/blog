@@ -1,9 +1,8 @@
 @mixin article-title {
-	font-style: italic;
 	font-weight: 500;
 
 	@media(min-width:1280px) {
-		font-size: 2.25rem;
+		font-size: 2.65rem;
 	}
 }
 

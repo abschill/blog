@@ -15,7 +15,6 @@
 
 .article {
 	@include m.layout-item;
-
 	line-height: 2.5;
     position: relative;
     top: 2rem;
@@ -24,6 +23,11 @@
 	&-meta {
 		&-title {
 			@include m.article-title;
+		}
+
+		&-date {
+			color: var(--gray);
+			font-size: 16px;
 		}
 
 		&-description {
