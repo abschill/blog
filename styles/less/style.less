@@ -9,6 +9,11 @@
 	--card-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(27, 31, 35, 0.25) 0px 0px 0px 1px;
 }
 
+::-moz-selection, ::selection {
+	background-color: @link-color;
+	color: #fff;
+}
+
 * {
     box-sizing: border-box;
 	font-family: var(--f-reset);
@@ -68,13 +73,15 @@ a {
 
 	img {
 		margin: 1rem 0;
-		max-width: 960px;
+		max-width: min(960px, 100%);
 	}
 }
 
 
 .collection {
 	list-style: none;
+	margin: 0;
+	padding: .25rem;
 
 	&-item {
 		border-radius: 8px;
@@ -83,27 +90,41 @@ a {
 		transition: box-shadow .25s ease;
 
 		a {
-			display: grid;
-			grid-template-columns: 1fr 3fr;
-			padding: 1.25rem;
+			display: block;
+			padding: .25rem;
+			text-align: center;
+
+			@media(min-width: 720px) {
+				display: grid;
+				grid-template-columns: 1fr 3fr;
+				padding: 1.25rem;
+			}
 		}
 
 		&__icon {
 			display: grid;
 			justify-content: center;
 
-
 			img {
-				height: 128px;
+				--size: 64px;
+				height: var(--size);
 				opacity: 0.85;
 				transition: opacity .15s ease;
-				width: 128px;
+				width: var(--size);
+
+				@media(min-width: 720px) {
+					--size: 128px;
+				}
 			}
 		}
 
 		&__title {
-			font-size: 2.25rem;
+			font-size: 1.75rem;
 			font-weight: 500;
+
+			@media(min-width: 720px) {
+				font-size: 2.25rem;
+			}
 		}
 
 		&__date {
@@ -122,8 +143,13 @@ a {
 
 p {
 	font-size: 1.05rem;
-	line-height: 2.75em;
-	margin: 1.25rem 0;
+	line-height: 2.35em;
+	margin: .5rem 0;
+
+	@media(min-width: 720px) {
+		line-height: 2.75em;
+		margin: 1.25rem 0;
+	}
 }
 
 pre {
@@ -165,5 +191,12 @@ pre {
 	img {
 		clip-path: circle(50%);
 		opacity: 0.9;
+	}
+}
+
+.about {
+	ul {
+		list-style-type: "\00F8";
+		line-height: 2;
 	}
 }
