@@ -7,7 +7,7 @@ const SiteRouter = require('./router');
 // import our 2 loader variants
 const { mdLoaderOptions, baseLoaderOptions } = require('./loaders');
 const api = express();
-// set a property on the api object that allows us to access the process path as an attribute in any scope the api will be in such as middleware in other files 
+// set a property on the api object that allows us to access the process path as an attribute in any scope the api will be in such as middleware in other files
 api.cwd = process.cwd();
 
 // set the content type to css if its in that directory and continue to process request
@@ -16,10 +16,10 @@ api.use((req, res, next) => {
 	next();
 });
 // bind assets href to the src/assets directory
-api.use('/assets', express.static(join(api.cwd, 'src/assets')));
+api.use('/assets', express.static(join(api.cwd, 'assets')));
 // consume that middleware with the href but setve from the path
-api.use('/css', express.static(join(api.cwd, 'styles/css')));
-api.use('/js', express.static(join(api.cwd, 'js')));
+api.use('/css', express.static(join(api.cwd, 'web/styles/css')));
+api.use('/js', express.static(join(api.cwd, 'web/js')));
 api.get('/manifest.json', ( _, res ) => res.sendFile(resolve(process.cwd(), 'manifest.json')));
 // integrate router above the error catch
 api.use(SiteRouter);

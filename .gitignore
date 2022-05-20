@@ -3,8 +3,8 @@ node_modules
 .ignore
 *.lock
 .env
-styles/css/**/*
-js/bundle.js
-views/.content/*.html
+web/styles/css/**/*
+web/js/bundle.js
+web/views/.content/*.html
 package-lock*
-content/HTTP101.md
+web/content/HTTP101.md
