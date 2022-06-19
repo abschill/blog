@@ -4,14 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:sass": "sass ./styles/sass/styles.scss:./styles/css/style.css",
-    "watch:sass": "sass -w ./styles/sass/styles.scss:./styles/css/style.css",
+    "build:sass": "sass ./web/styles/sass/styles.scss:./web/styles/css/style.css",
+    "watch:sass": "sass -w ./web/styles/sass/styles.scss:./web/styles/css/style.css",
     "watch:server": "nodemon index.js dev",
     "build:js": "webpack",
     "watch:js": "webpack --watch",
-	"build:md": "node tools/compile-md",
+    "build:md": "node tools/compile-md",
     "build-all": "npm run build:sass && npm run build:js && npm run build:md",
-    "dev": "npm-run-all -p watch:js watch:server watch:sass",
+	"watch:post": "node tools/watch-styles.js",
+    "dev": "make -j 4 watch-js watch-server watch-sass watch-post",
     "start": "npm run build-all && node src prod"
   },
   "dependencies": {
@@ -29,6 +30,8 @@
     "marked": "^4.0.15",
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-minify": "^1.1.0",
     "sass": "^1.51.0",
     "swc-loader": "^0.2.0",
     "webpack": "^5.72.0",
