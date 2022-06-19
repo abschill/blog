@@ -1,25 +1,8 @@
 const express = require('express');
 const prismic = require('./prismic');
 const router = express.Router();
+const { compileData } = require('./prismic');
 
-async function data(id) {
-    const article = await prismic.getArticleId(id);
-    const title = prismic.cleanStupidText(article?.data?.title);
-    const date = article?.data?.created;
-    const article_icon = article?.data?.icon?.url;
-    const description = prismic.cleanStupidText(article?.data?.description);
-    const content = prismic.cleanStupidText(article?.data?.content);
-	if(article) {
-		return {
-			title,
-			description,
-			date,
-			article_icon,
-			content
-		}
-	}
-    return null;
-}
 
 router.get('/', async (req, res) => {
 	// organize the data with the tag info so we can add the filter component back next time I feel like writing css
@@ -31,7 +14,7 @@ router.get('/', async (req, res) => {
 router.get('/about', (req, res) => res.send(req.app.loader.template('about')));
 
 router.get('/articles/:id', async (req, res) => {
-    const article = await data(req.params.id);
+    const article = await compileData(req.params.id);
 	if(article) {
 		return res.send(req.app.loader.template('article', { partialInput: {
 			meta_title: article.title,

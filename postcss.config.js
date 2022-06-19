@@ -1,6 +1,6 @@
 module.exports = {
     plugins: [
-        require( 'autoprefixer' ),
-        require( 'postcss-minify' )
+        require('autoprefixer'),
+        require('postcss-minify')
     ]
 }

@@ -1,0 +1,12 @@
+{
+	"ssr_config": {
+		"pathRoot": "web/views",
+		"templates": "pages",
+		"partials": "layout"
+	},
+	"ssg_config": {
+		"pathRoot": "web/views",
+		"templates": "pages",
+		"partials": "layout"
+	}
+}

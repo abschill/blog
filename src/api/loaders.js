@@ -1,5 +1,5 @@
 const baseLoaderOptions = {
-	pathRoot: 'views',
+	pathRoot: 'web/views',
 	templates: 'pages',
 	partials: 'layout',
 	partialInput: {
@@ -11,7 +11,7 @@ const baseLoaderOptions = {
 }
 
 const mdLoaderOptions = {
-	pathRoot: 'views',
+	pathRoot: 'web/views',
 	templates: '.content',
 	partials: 'layout',
 	partialInput: {
@@ -22,4 +22,4 @@ const mdLoaderOptions = {
     }
 }
 
-module.exports = {baseLoaderOptions, mdLoaderOptions};
+module.exports = { baseLoaderOptions, mdLoaderOptions };

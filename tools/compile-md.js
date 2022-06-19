@@ -1,16 +1,11 @@
 const { marked } = require('marked');
 const { JSDOM } = require('jsdom');
-const {
-	readFileSync,
-	writeFileSync,
-	existsSync,
-	readdirSync
-} = require('fs');
 const { resolve, join } = require('path');
 const filterContent  = require('./utils/filter-content');
 const { parseFileDirective } = require('./utils/parse-directive');
 const { prependPartial, appendPartial } = require('./utils/add-hcl-partial');
-const contentPath = join(process.cwd(), 'content');
+const contentPath = join(process.cwd(), 'web/content');
+
 const {
 	_outPath,
 	articleClose,
@@ -18,6 +13,12 @@ const {
 	mainOpen,
 	mainClose
 } = require('./utils/constants');
+const {
+	readFileSync,
+	writeFileSync,
+	existsSync,
+	readdirSync
+} = require('fs');
 
 marked.setOptions({
 	smartypants: true
@@ -54,6 +55,7 @@ contentPages.forEach(validPage => {
 
 	validHTML = prependPartial(validHTML, '<!--@partial=head--><!--@partial=nav-->');
 	validHTML = appendPartial(validHTML, '<!--@partial=scripts-->');
+	validHTML = validHTML.replaceAll(/\t*|\n*/g, '');
 	const outPath = resolve(_outPath, name);
 	writeFileSync(outPath, validHTML);
 	console.log(`File Written: ${name}`);

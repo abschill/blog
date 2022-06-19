@@ -1,6 +1,6 @@
-const path = require( 'path' );
+const path = require('path');
 module.exports = {
-	entry: './js/page.js',
+	entry: './web/js/page.js',
     module: {
         rules: [
             {
@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'js'),
+        path: path.resolve(__dirname, 'web/js'),
     },
     target: 'web',
 }

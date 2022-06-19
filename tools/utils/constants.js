@@ -1,4 +1,4 @@
-module.exports._outPath = 'views/.content';
+module.exports._outPath = 'web/views/.content';
 module.exports.articleOpen = '<article class="article">';
 module.exports.articleClose = '</article>';
 // match up with the other articles from prismic

@@ -60,5 +60,23 @@ async function getTagList() {
 
 const cleanStupidText = txt =>  !txt ? '' : txt.replace( /\u00A0/g, ' ');
 
+async function compileData(id) {
+    const article = await prismic.getArticleId(id);
+    const title = prismic.cleanStupidText(article?.data?.title);
+    const date = article?.data?.created;
+    const article_icon = article?.data?.icon?.url;
+    const description = prismic.cleanStupidText(article?.data?.description);
+    const content = prismic.cleanStupidText(article?.data?.content);
+	if(article) {
+		return {
+			title,
+			description,
+			date,
+			article_icon,
+			content
+		}
+	}
+    return null;
+}
 
-module.exports = { getArticleId, getArticles, getTagList, cleanStupidText };
+module.exports = { compileData, getArticleId, getArticles, getTagList, cleanStupidText };
