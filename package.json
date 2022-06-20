@@ -11,13 +11,13 @@
     "watch:js": "webpack --watch",
     "build:md": "node tools/compile-md",
     "build-all": "npm run build:sass && npm run build:js && npm run build:md",
-	"watch:post": "node tools/watch-styles.js",
+    "watch:post": "node tools/watch-styles.js",
     "dev": "make -j 4 watch-js watch-server watch-sass watch-post",
     "start": "npm run build-all && node src prod"
   },
   "dependencies": {
     "@prismicio/client": "5.1.0",
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "html-chunk-loader": "^0.7.2",
     "prismic-dom": "^2.2.7",
