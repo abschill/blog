@@ -1,4 +1,4 @@
-import blog from "https://deno.land/x/blog@0.3.3/blog.tsx";
+import blog from "https://raw.githubusercontent.com/abschill/deno_blog/main/blog.tsx";
 
 blog({
 	title: "abschill's blog",
@@ -10,5 +10,6 @@ blog({
 			title: 'Github',
 			url: 'https://github.com/abschill'
 		}
-	]
+	],
+	rssDomain: 'https://blog.abschill.com'
 });
