@@ -1,5 +1,5 @@
 ---
-title: Quick Tips: process.cwd() vs __dirname in node
+title: Quick Tips - process.cwd() vs __dirname in node
 publish_date: 2022-06-21
 ---
 These 2 are commonly used to mean pretty different things in node.
