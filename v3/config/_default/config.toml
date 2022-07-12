@@ -1,4 +1,4 @@
-baseURL = "https://abschill.github.io/blog"
+baseURL = "https://blog.abschill.com"
 title = "abschill's blog"
 theme = "zzo"
 
