@@ -9,3 +9,6 @@ views/.content/*.html
 package-lock*
 content/HTTP101.md
 node-old
+v3/content/en/posts/rich-content.md
+v3/content/en/posts/shortcodes.md
+v3/content/en/posts/syntax-highlighting.md
