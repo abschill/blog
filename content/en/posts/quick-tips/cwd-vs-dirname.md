@@ -1,5 +1,5 @@
 ---
-title: Quick Tips - `cwd` vs dirname in node
+title: Quick Tips - cwd vs dirname in node
 date: 2022-06-21
 enableToc: false
 draft: false
