@@ -15,7 +15,7 @@ tags:
 - go language
 categories:
 - rationalizing my decisions in life
-image: images/favicon/sweatshirt.jpeg
+image: favicon/sweatshirt.jpeg
 ---
 
 As you may have noticed, there are less articles than there were before.
