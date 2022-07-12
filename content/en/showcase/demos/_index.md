@@ -2,5 +2,5 @@
 title: "code demos"
 description: code demonstrations for various concepts
 category: stuff
-weight: 2
+weight: 4
 ---
