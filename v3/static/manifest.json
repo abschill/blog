@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "abschill'sblog",
+  "name": "abschill's blog",
   "short_name": "abschill's blog",
   "version": "3.0.0",
   "default_locale": "en",
   "description": "my blog but in hugo",
-  "start_url": "https://abschill/github.io/blog-dot-abschill.github.io/",
+  "start_url": "https://abschill/github.io/blog-dot-abschill/",
   "icons": [
     {
       "src": "favicon/sweatshirt.jpeg",
