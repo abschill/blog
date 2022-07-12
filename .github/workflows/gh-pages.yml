@@ -17,7 +17,7 @@ jobs:
         with:
           hugo-version: 'latest'
       - name: Build
-        run: hugo --minify --source ./v3 --baseUrl ./v3
+        run: hugo --minify --source ./v3 --baseUrl ./v3 --layoutDir ./v3/layout --contentDir ./v3/content
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
