@@ -1,6 +1,6 @@
 ---
-title: "FOSS Projects"
+title: "foss projects"
 description: open source libraries ive worked on
-category: work
-enableBio: false
+category: stuff
+weight: 3
 ---
