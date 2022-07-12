@@ -1,6 +1,13 @@
 ---
 title: Quick Tips - Early Returns
 date: 2022-06-20
+enableToc: false
+draft: false
+enableTocContent: false
+series:
+- quick-tips
+categories:
+- quick-tips
 ---
 
 A good tip to keep in mind when programming is minimizing your use of `else` statements. When possible, exit the function context earlier given a value that establishes the given return, rather than reflecting that with an else statement to check for something else. That may sound complicated, but its not, here is an example:
