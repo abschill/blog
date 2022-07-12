@@ -5,7 +5,7 @@
   "version": "3.0.0",
   "default_locale": "en",
   "description": "my blog but in hugo",
-  "start_url": "https://abschill.github.io/blog-dot-abschill/",
+  "start_url": "https://abschill.github.io/blog",
   "icons": [
     {
       "src": "favicon/sweatshirt.jpeg",
