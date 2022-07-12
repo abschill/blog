@@ -9,7 +9,4 @@ views/.content/*.html
 package-lock*
 content/HTTP101.md
 node-old
-content/en/posts/rich-content.md
-content/en/posts/shortcodes.md
-content/en/posts/syntax-highlighting.md
 .DS_STORE
