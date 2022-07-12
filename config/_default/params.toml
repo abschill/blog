@@ -4,7 +4,7 @@ description = "software engineering tips, tricks, and rants"
 custom_css = []
 custom_js = []
 useFaviconGenerator = false # https://www.favicon-generator.org/
-meta_image = "https://avatars.githubusercontent.com/u/56945687?v=4"
+meta_image = "static/favicon/favicon.ico"
 themecolor = ""
 
 themeOptions = ["dark", "light", "solarized", "kimbie"]

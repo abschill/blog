@@ -7,6 +7,12 @@
   "description": "my blog but in hugo",
   "start_url": "https://blog.abschill.com",
   "icons": [
+	{
+		"src": "favicon/favicon.ico",
+		"sizes": "16x16",
+		"type": "image/png",
+		"density": 1.0
+	},
     {
       "src": "favicon/sweatshirt.jpeg",
       "sizes": "280x280",
