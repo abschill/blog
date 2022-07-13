@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>tooling on abschill&#39;s blog</title>
+    <link>https://blog.abschill.com/showcase/tools/</link>
+    <description>Recent content in tooling on abschill&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>dev3141592@gmail.com (abschill)</managingEditor>
+    <webMaster>dev3141592@gmail.com (abschill)</webMaster>
+    <copyright>©2022, something, in theory</copyright>
+    
+        <atom:link href="https://blog.abschill.com/showcase/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>emacs</title>
+        <link>https://blog.abschill.com/showcase/tools/emacs/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/emacs/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>git</title>
+        <link>https://blog.abschill.com/showcase/tools/git/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/git/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>azure data studio</title>
+        <link>https://blog.abschill.com/showcase/tools/ads/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/ads/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>compiler explorer</title>
+        <link>https://blog.abschill.com/showcase/tools/compiler-explorer/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/compiler-explorer/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>qemu</title>
+        <link>https://blog.abschill.com/showcase/tools/qemu/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/qemu/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>socks5</title>
+        <link>https://blog.abschill.com/showcase/tools/socks/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/socks/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>vmware</title>
+        <link>https://blog.abschill.com/showcase/tools/vmware/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/vmware/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>vscode</title>
+        <link>https://blog.abschill.com/showcase/tools/vscode/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/vscode/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>z shell</title>
+        <link>https://blog.abschill.com/showcase/tools/zsh/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/zsh/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>aircrack-ng</title>
+        <link>https://blog.abschill.com/showcase/tools/aircrack/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/aircrack/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>cmake</title>
+        <link>https://blog.abschill.com/showcase/tools/cmake/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/cmake/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>mac os</title>
+        <link>https://blog.abschill.com/showcase/tools/macos/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/macos/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>netcat</title>
+        <link>https://blog.abschill.com/showcase/tools/netcat/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/netcat/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>nmap</title>
+        <link>https://blog.abschill.com/showcase/tools/nmap/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/nmap/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>parrot</title>
+        <link>https://blog.abschill.com/showcase/tools/parrot/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/parrot/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>windows 11</title>
+        <link>https://blog.abschill.com/showcase/tools/windows/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/windows/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>gulp</title>
+        <link>https://blog.abschill.com/showcase/tools/gulp/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/gulp/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>john</title>
+        <link>https://blog.abschill.com/showcase/tools/john/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/john/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>make</title>
+        <link>https://blog.abschill.com/showcase/tools/make/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/make/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>clangd</title>
+        <link>https://blog.abschill.com/showcase/tools/clangd/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/clangd/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>emacs-company-mode</title>
+        <link>https://blog.abschill.com/showcase/tools/company-mode-emacs/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/tools/company-mode-emacs/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

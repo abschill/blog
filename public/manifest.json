@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "abschill's blog",
+  "short_name": "abschill's blog",
+  "version": "3.0.0",
+  "default_locale": "en",
+  "description": "my blog but in hugo",
+  "start_url": "https://blog.abschill.com",
+  "icons": [
+	{
+		"src": "favicon/favicon.ico",
+		"sizes": "16x16",
+		"type": "image/png",
+		"density": 1.0
+	},
+    {
+      "src": "favicon/sweatshirt.jpeg",
+      "sizes": "280x280",
+      "type": "image/png",
+      "density": "4.0"
+    }
+  ],
+  "theme_color": "#FF6188",
+  "background_color": "#2D2A2E",
+  "display": "standalone"
+}

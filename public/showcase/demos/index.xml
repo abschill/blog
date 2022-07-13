@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>code demos on abschill&#39;s blog</title>
+    <link>https://blog.abschill.com/showcase/demos/</link>
+    <description>Recent content in code demos on abschill&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>dev3141592@gmail.com (abschill)</managingEditor>
+    <webMaster>dev3141592@gmail.com (abschill)</webMaster>
+    <copyright>©2022, something, in theory</copyright>
+    
+        <atom:link href="https://blog.abschill.com/showcase/demos/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>c-web-server</title>
+        <link>https://blog.abschill.com/showcase/demos/c-web-server/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/c-web-server/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>vi-clone-termios</title>
+        <link>https://blog.abschill.com/showcase/demos/termios-vi-clone/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/termios-vi-clone/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>haxe-helloworld</title>
+        <link>https://blog.abschill.com/showcase/demos/haxe-hello-world/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/haxe-hello-world/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>rust-multithread-webserver</title>
+        <link>https://blog.abschill.com/showcase/demos/rust-multithread-http/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/rust-multithread-http/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>c-repl</title>
+        <link>https://blog.abschill.com/showcase/demos/c-repl/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/c-repl/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>dart-cli-boilerplate</title>
+        <link>https://blog.abschill.com/showcase/demos/dart-web-server/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/dart-web-server/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>perl-webserver</title>
+        <link>https://blog.abschill.com/showcase/demos/perl-web-server/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        
+        <guid>https://blog.abschill.com/showcase/demos/perl-web-server/</guid>
+        <description></description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

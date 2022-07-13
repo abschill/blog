@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Posts on abschill&#39;s blog</title>
+    <link>https://blog.abschill.com/posts/</link>
+    <description>Recent content in Posts on abschill&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>dev3141592@gmail.com (abschill)</managingEditor>
+    <webMaster>dev3141592@gmail.com (abschill)</webMaster>
+    <copyright>©2022, something, in theory</copyright>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.abschill.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Quick Tips - npm workspaces</title>
+        <link>https://blog.abschill.com/posts/quick-tips/npm-workspaces/</link>
+        <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        <atom:modified>Tue, 12 Jul 2022 00:00:00 +0000</atom:modified>
+        <guid>https://blog.abschill.com/posts/quick-tips/npm-workspaces/</guid>
+        <description>Many of you might be in a similar position to where I was, thinking lerna still served some sort of useful purpose in the node ecosystem, but no, it doesnt apparently.</description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+          
+            
+              <category>quick-tips</category>
+            
+          
+        
+        
+          
+            
+              <category>quick-tips</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Quick Tips - cwd vs dirname in node</title>
+        <link>https://blog.abschill.com/posts/quick-tips/cwd-vs-dirname/</link>
+        <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        <atom:modified>Tue, 21 Jun 2022 00:00:00 +0000</atom:modified>
+        <guid>https://blog.abschill.com/posts/quick-tips/cwd-vs-dirname/</guid>
+        <description>These 2 are commonly used to mean pretty different things in node.
+process.cwd() is a function that is evaluated to the working directory of the process, by default this is the directory where the process was called from (where &amp;ldquo;node index.</description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+          
+            
+              <category>quick-tips</category>
+            
+          
+        
+        
+          
+            
+              <category>quick-tips</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Quick Tips - Early Returns</title>
+        <link>https://blog.abschill.com/posts/quick-tips/early-returns/</link>
+        <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        <atom:modified>Mon, 20 Jun 2022 00:00:00 +0000</atom:modified>
+        <guid>https://blog.abschill.com/posts/quick-tips/early-returns/</guid>
+        <description>A good tip to keep in mind when programming is minimizing your use of else statements. When possible, exit the function context earlier given a value that establishes the given return, rather than reflecting that with an else statement to check for something else.</description>
+        
+        <dc:creator>abschill</dc:creator>
+        
+        
+        
+        
+        
+          
+            
+              <category>quick-tips</category>
+            
+          
+        
+        
+          
+            
+              <category>quick-tips</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Welcome to my new blog again</title>
+        <link>https://blog.abschill.com/posts/welcome-new/</link>
+        <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+        <author>dev3141592@gmail.com (abschill)</author>
+        <atom:modified>Sun, 12 Jun 2022 00:00:00 +0000</atom:modified>
+        <guid>https://blog.abschill.com/posts/welcome-new/</guid>
+        <description>As you may have noticed, there are less articles than there were before.
+I decided I wanted to remove the longer tutorial posts I had because I am simply not interested in making that longer content and will be transitioning to primarily shorter &amp;ldquo;quick tips/opinion&amp;rdquo; types of posts instead.</description>
+        
+        <dc:creator>abschill</dc:creator>
+        <media:content url="https://blog.abschill.comfavicon/sweatshirt.jpeg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>effort</category>
+            
+          
+            
+              <category>themes</category>
+            
+          
+            
+              <category>go language</category>
+            
+          
+        
+        
+          
+            
+              <category>rationalizing my decisions in life</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
