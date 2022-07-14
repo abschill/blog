@@ -11,8 +11,6 @@ categories:
 - typescript
 ---
 
-# Variadic Unions in Typescript
-
 A lot of the time, you want to define union types in typescript, and you would set it up like this by default for a small collection of enumerated values-as-types:
 
 ```typescript
