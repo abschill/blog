@@ -8,6 +8,7 @@ series:
 - quick-tips
 categories:
 - quick-tips
+- node
 ---
 
 These 2 are commonly used to mean pretty different things in node.
