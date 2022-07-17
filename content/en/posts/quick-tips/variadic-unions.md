@@ -25,7 +25,7 @@ const FoobarOptions = [
 	"foo",
 	"bar",
 	"baz"
-];
+] as const;
 type Foobar = typeof FoobarOptions[number];
 ```
 
