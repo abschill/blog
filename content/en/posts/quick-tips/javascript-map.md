@@ -30,7 +30,7 @@ visitsCountMap.set(john, 123);
 alert(visitsCountMap.get(john)); // 123
 ```
 
-## Object.entries map from object
+## Nested Key Retrieval
 ```javascript
 // array of [key, value] pairs
 let map = new Map([
@@ -42,7 +42,7 @@ let map = new Map([
 alert(map.get('1')); // str1
 ```
 
-## Object.fromEntries object from map
+## Convert back to "object map"
 
 ```javascript
 let prices = Object.fromEntries([
