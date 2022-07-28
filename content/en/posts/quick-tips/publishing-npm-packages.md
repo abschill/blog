@@ -34,15 +34,19 @@ semver that you are publishing to in the registry
 map of export paths relative to the installation name of your package. if you do not set this, but you set the `main` key to `index.js`, then it would look like this:
 
 ```json
-"exports": {
-	".": "index.js"
+{
+  "exports": {
+    ".": "index.js"
+  }
 }
 ```
 
 You can set this up using this format to be tailored to your needs. You can also write that exact example like this:
 
-```
-exports: 'index.js'
+```json
+{
+  "exports": "index.js"
+}
 ```
 
 You can also use conditional export patterns to determine if the user is `import`ing or `require`ing your package:
