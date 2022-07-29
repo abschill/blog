@@ -9,6 +9,7 @@ series:
 categories:
 - quick-tips
 - code-quality
+image: images/programming.jpeg
 ---
 
 A good tip to keep in mind when programming is minimizing your use of `else` statements. When possible, exit the function context earlier given a value that establishes the given return, rather than reflecting that with an else statement to check for something else. That may sound complicated, but its not, here is an example:

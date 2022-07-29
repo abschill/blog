@@ -9,6 +9,7 @@ series:
 categories:
 - quick-tips
 - code-quality
+image: images/javascript.png
 ---
 
 When writing javascript, most of us default to using objects/arrays when we need to store stuff. It makes the most sense usually, but there are 2 other types that are often slept on. These types are `Map` and `Set`. Today we will be going over `Map` and next we will go over `Set`.

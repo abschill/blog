@@ -10,6 +10,7 @@ categories:
 - quick-tips
 - node
 - npm
+image: images/npm.png
 ---
 
 # Publishing an NPM package

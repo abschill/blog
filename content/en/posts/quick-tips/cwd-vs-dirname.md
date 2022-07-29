@@ -9,6 +9,7 @@ series:
 categories:
 - quick-tips
 - node
+image: images/nodejs.png
 ---
 
 These 2 are commonly used to mean pretty different things in node.

@@ -10,6 +10,7 @@ categories:
 - quick-tips
 - node
 - npm
+image: images/npm.png
 ---
 
 # NPM Lifecycle scripts

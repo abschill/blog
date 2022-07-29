@@ -10,6 +10,7 @@ categories:
 - quick-tips
 - node
 - npm
+image: images/npm.png
 ---
 
 Many of you might be in a similar position to where I was, thinking lerna still served some sort of useful purpose in the node ecosystem, but no, it doesnt apparently.
