@@ -40,5 +40,10 @@ When installing dependencies, a preferred tagged version may be specified. This 
 npm install --tag <tag>
 ```
 
+Shorthand for publishing with `canary` tag
+
+```
+npm publish --tag canary
+```
 
 
