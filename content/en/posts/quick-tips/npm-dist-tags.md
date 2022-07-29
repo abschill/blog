@@ -13,7 +13,6 @@ categories:
 image: images/npm.png
 ---
 
-# Publishing dist tags on npm
 
 Tags can be used to provide an alias instead of version numbers. For example, a project might choose to have multiple streams of development and use a different tag for each stream, e.g., `stable`, `beta`, `dev`, `canary`. Publishing a package sets the latest tag to the published version unless the `--tag` option is used. For example, `npm publish --tag=beta`. By default, `npm install <pkg>` (without any `@<version>` or `@<tag>` specifier) installs the latest tag. The `next` tag is used by some projects to identify the upcoming version.
 
