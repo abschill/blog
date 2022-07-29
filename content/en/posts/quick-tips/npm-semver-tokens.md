@@ -20,3 +20,15 @@ Token | Definition
 `^` | Look for Minor Releases (`0.y.0`)
 `*` | Look for Major Releases (`x.0.0`)
 `~` | Look for Patch Releases (`0.0.z`)
+
+## Examples
+
+```json
+{
+	"dependencies": {
+		"dep_name0": "~0.0.1",
+		"dep_name1": "^0.1.0",
+		"dep_name2": "*1.0.0"
+	}
+}
+```
