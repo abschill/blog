@@ -104,7 +104,7 @@ busuanziSitePV = true
 busuanziPagePV = true
 
 # rss
-updatePeriod = "" # Possible values: 'hourly', 'daily', 'weekly', 'monthly', or 'yearly'.
+updatePeriod = "weekly" # Possible values: 'hourly', 'daily', 'weekly', 'monthly', or 'yearly'.
 updateFrequency = ""
 fullContents = false
 
@@ -208,8 +208,8 @@ commento = false
   name = "feedly"
 
 [[footerLinks]]
-  name = ""
-  link = ""
+  name = "chip in for my vps bill"
+  link = "https://buymeacoffee.com/abschill"
 [[footerLinks]]
   name = ""
   link = ""
